@@ -1,0 +1,14 @@
+
+.section-b {
+    @include set-background($lightdark-blue-color);
+    
+    
+    &-box {
+        padding: 70px  20px 50px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 150px;
+    }
+}

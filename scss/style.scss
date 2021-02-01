@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import 'btn';
+@import 'color';
+@import 'nav';
+@import 'hero-img';
+@import 'section-a';
+@import 'section-b';
+
+// _style.scss
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: $font-stack;
+    line-height: 1.6;
+  }
+  img{
+    width: 100%;
+}
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+ 
