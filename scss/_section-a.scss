@@ -5,6 +5,7 @@
     padding-bottom: 30px;
     @include set-background($light-color);
     
+      //this .section-container is customize style from global style scss
     .section-container{
     gap: 50px;
     }

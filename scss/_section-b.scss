@@ -2,9 +2,8 @@
 .section-b {
     @include set-background($lightdark-blue-color);
     text-align: center;
-    
+      //this .section-container is customize style from global style scss
     .section-container {
     gap: 100px;
-
     }
 }

@@ -2,16 +2,16 @@
 .section-c {
     @include set-background($light-blue-color);
 
-       
+  //this .section-container is customize style from global style scss
 .section-container{
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         }
 
         .logo-display {
-                padding-top: 20px;
-                width: 40%;
-                justify-self:center; 
-                }
+        padding-top: 20px;
+        width: 40%;
+        justify-self:center; 
+        }
          p {
         text-align: center;
         font-size: 1.3rem;
