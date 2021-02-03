@@ -1,0 +1,34 @@
+.section-d {
+    @include set-background(#fff);
+    padding: 40px 0;
+
+
+   .section-d-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 20px;
+   }
+   
+   .news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px dotted rgb(180, 178, 178);
+    @include set-background($light-color);
+   }
+}
+
+
+@media (max-width: 700px) {
+  
+   .section-d-container .news {
+    grid-template-columns: 1fr ;
+    justify-content: space-around;
+    
+   }
+
+}

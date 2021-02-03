@@ -5,7 +5,10 @@
 @import 'hero-img';
 @import 'section-a';
 @import 'section-b';
+@import 'section-c';
+@import 'section-d';
 @import 'btn';
+
 
 // _style.scss
 * {
@@ -22,10 +25,7 @@
   img{
     width: 100%;
 }
-  .container {
-    max-width: 1200px;
-    margin: auto;
-  }
+
   a {
     text-decoration: none;
   }

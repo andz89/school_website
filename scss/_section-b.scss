@@ -1,14 +1,24 @@
 
 .section-b {
     @include set-background($lightdark-blue-color);
-    
-    
-    &-box {
-        padding: 70px  20px 50px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 150px;
+
+    .section-b-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px  20px 70px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
     }
 }
+@media (max-width: 700px) {
+  
+    .section-b .section-b-container {
+    grid-template-columns: 1fr ;
+    justify-content: space-around;
+    }
+ 
+ }
