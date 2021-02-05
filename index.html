@@ -7,8 +7,8 @@
     <title>BVMCES</title>
 </head>
 <body>
-  
-    <nav class="nav">
+  <div class="main"></div>
+    <nav  class="nav">
         
         <div class="nav-container">
             <div class="nav-container-logo">
@@ -24,7 +24,7 @@
             <div class="nav-container-bar">
                     <ul>
                         <li> <a href="#home">Home</a></li>
-                        <li> <a href="#faculty">Faculty</a></li>
+                        <!-- <li> <a href="#faculty">Faculty</a></li> -->
                         <li> <a href="#learningMaterials">Learning Materials</a></li>
                         <li> <a href="#newsUpdate">News & Updates</a></li>
                         <li class="contact"> <a href="#contact"> Contact Us</a></li>
@@ -35,9 +35,9 @@
       
     </nav>
 
-    <div class="hero-img"></div>
+    <div id="home" class="hero-img"></div>
 
-    <main>
+    <main >
         
         <section class="section-a">
             <div class="section-container ">
@@ -86,9 +86,16 @@
             
              
             </div>
-            <p>We serve with God. . . Goodness, Openness and Dignity . .</p>
+            <!-- this div ID newsUpdate  is for smooth scroll bar purpose only -->
+            <div id="newsUpdate"> </div>
+
+            <p >We serve with God. . . Goodness, Openness and Dignity . .</p>
+         
+         
         </section>
-        <section class="section-d">
+     
+        <section   class="section-d">
+           
             <div class="h1-div">
                 <h1>News & Updates</h1>
           
@@ -133,7 +140,7 @@
     
         </section>
 
-        <section class="section-e">
+        <section id="contact" class="section-e">
         <div class="h1-div">
                 <h1>Contact Us</h1>
                 <div class="line-dot"></div>
@@ -174,8 +181,11 @@
         <p>All Rights Reserved. Designed and Developed by BVMCES ICT Coordinator Dawn Andrew N. Rivero and Teaching Staff</p>
     </footer>
     
-
-    <script src="https://kit.fontawesome.com/1e73202a43.js" crossorigin="anonymous"></script>
-    <script src="script/script.js"></script>
+   
+</div>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="https://kit.fontawesome.com/1e73202a43.js" crossorigin="anonymous"></script>
+<script src="script/script_smooth.js"></script>
+<script src="script/script.js"></script>
 </body>
 </html>
