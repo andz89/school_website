@@ -2,8 +2,27 @@
 .section-b {
     @include set-background($lightdark-blue-color);
     text-align: center;
+    padding: 100px 0;
+
+    
       //this .section-container is customize style from global style scss
     .section-container {
     gap: 100px;
+ 
+    div{
+      width: 90%;
+      margin: auto;
+    }
+
     }
 }
+@media (max-width: 700px) {
+
+  .section-b  {
+  padding: 20px 0;
+  }
+  .section-b .section-container{
+    gap: 50px;
+ }
+ 
+ }

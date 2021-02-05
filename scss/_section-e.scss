@@ -1,0 +1,106 @@
+.section-e {
+    @include set-background($light-blue-color);
+    height: 100%;
+    padding: 60px 20px;
+ 
+    .h1-div {
+        max-width: 1200px;
+        margin: auto;
+        h1{
+            padding-bottom: 10px;
+        }
+
+        .line-dot{
+        border-top: 1.5px dotted rgb(180, 178, 178);
+        margin-bottom: 50px;
+        }
+ 
+      }
+
+
+      //contacts area
+    .contacts {
+     color: $dark-blue-color;
+     
+        p{
+          padding-bottom: 15px;
+        }
+
+            li{
+            padding: 10px 0 20px 0;
+
+            i{
+                margin-right: 15px;
+            
+            }
+            .fa-facebook-f {
+                padding-right: 7px;
+            }
+            
+            }
+      
+      
+    }
+
+
+      //form area
+   .form {
+
+    .btn{
+        padding: 10px 30px;
+    }
+//input type: first-name & lastname to display Grid
+    .form-group:first-child{  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .form-group {
+        margin: 1.2rem 0;
+       
+        input[type='text']{
+            margin-top: 0.3rem;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            width: 100%;
+         }
+         input[type='email']{
+            display:block;
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+        }
+        textarea{
+            display:block;
+            width: 100%;
+            padding: 0.9rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            height: 12  0px;
+            font-family: $font-stack;
+            height: 200px;
+           
+        }
+
+        /* Chrome/Opera/Safari */
+        ::-webkit-input-placeholder { 
+            color:#333;
+            font-family: $font-stack;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+        color: pink;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+        color: pink;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+        color: pink;
+        }
+        
+    }
+   
+    }
+}

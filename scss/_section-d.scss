@@ -16,6 +16,10 @@
     margin-bottom: 20px;
     border: 1px dotted rgb(180, 178, 178);
     @include set-background($light-color);
+
+    h1{
+       margin-bottom: -10px;
+    }
    }
 }
 
