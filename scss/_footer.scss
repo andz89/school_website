@@ -1,0 +1,6 @@
+footer{
+    @include set-background($dark-blue-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
