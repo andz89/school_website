@@ -15,10 +15,22 @@
     margin: 10px 0px;
     
 }
+  //btn size
+  .btn-sm {
+        padding: 0.2rem 1rem;
+}
+.btn-md {
+        padding: 0.5rem 2rem;
+}
+.btn-xl {
+    padding: 1rem 2.5rem;
+}
 
 .btn-primary {
     @include set-background($dark-blue-color);
     &:hover{
         background: lighten($dark-blue-color, 5%)
     }
+
+  
 }
