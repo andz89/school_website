@@ -3,23 +3,28 @@ const scroll = new SmoothScroll('nav a[href*="#"]', {
 });
 
 let btn = document.querySelector('#btn');
-let sideMenu = document.querySelector('ul');
+let sideMenu = document.querySelector(".nav-container-bar");
 let btnclose = document.querySelector(".btn-close")
-let li = document.querySelectorAll("li")
+
 
 
 
 btn.addEventListener("click", ()=>{
 	console.log("hello")
-	btn.classList.toggle('active');
-	sideMenu.classList.toggle('show');
+	sideMenu.style.marginLeft = "0px";
+	btn.classList.toggle('active')
+	
+});
+
+btnclose.addEventListener("click", ()=>{
+	console.log("hello")
+	sideMenu.style.marginLeft = "-1300px";
 	
 });
 
 
-
 sideMenu.addEventListener('click', ()=>{
 	btn.classList.toggle('active');
-	sideMenu.classList.toggle('show');
+	sideMenu.classList.toggle('active');
 	
 })
