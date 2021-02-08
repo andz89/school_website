@@ -11,19 +11,19 @@ let btnclose = document.querySelector(".btn-close")
 
 btn.addEventListener("click", ()=>{
 	console.log("hello")
-	sideMenu.style.width = "300px";
+	sideMenu.style.marginRight = "0px";
 	
 });
 
 btnclose.addEventListener("click", ()=>{
 
-	sideMenu.style.width = "0";
+	sideMenu.style.marginRight = "-250px";
 
 });
 
 
 sideMenu.addEventListener('click', ()=>{
 	
-	sideMenu.style.width = "0";
+	sideMenu.style.marginRight = "-250px";
 	
 })
