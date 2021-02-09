@@ -1,0 +1,73 @@
+.section-c2{
+    padding: 75px 0;
+    @include set-background($light-blue-color);;
+    .section-container {
+        display: grid;
+        grid-template-columns: none;
+  
+
+        .boxes {
+        padding: 40px 0;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-items: center;
+        justify-content: center;
+
+        .box{
+            @include set-background($dark-blue-color);;
+            text-align: center;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+            cursor: pointer;
+           
+            
+        }
+        .box:hover {
+            @include set-background($lightdark-blue-color);
+       
+        }
+        }
+        h2{
+            text-align: center;
+        }
+        .boxes-2 {
+
+            padding: 40px 0;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            align-items: center;
+            justify-content: center;
+
+            .box{
+                @include set-background($dark-blue-color);
+                text-align: center;
+                padding: 1.5rem 2rem;
+                box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+                cursor: pointer;
+            }
+
+            .box:hover {
+                @include set-background($lightdark-blue-color);
+            }
+        }
+
+        
+    }
+}
+@media (max-width: 700px) {
+    .section-c2 {
+     padding: 40px 0px;
+  
+  
+     .section-container {
+        gap: 0px;
+       
+      
+     }
+    }
+    
+    
+    
+    }
