@@ -33,9 +33,11 @@
         }
       
     
-        i{
+        .burger{
             display: none;
+            cursor: pointer;
         }
+       
         .btn-close{
             display: none;
         }
@@ -55,27 +57,28 @@
             }
        
            
-            li a{    
-            padding: 0 2rem;
+            li {    
+            padding: 0.7rem 2rem;
             text-decoration: none;
             color: $light-color;
             transition: all 0.2s ease-in;
             }
-            a:hover {
+            li:hover {
             background-color: $lightdark-blue-color;
-            padding: 0.7rem 2rem;
             color: #fff;
             }
 
         // contact us box
-            .contact a {
+            .contact{
             background-color: $light-blue-color;
             padding: 0.7rem 2rem;
-            color: #333;
+            color: $dark-blue-color;
             margin-left: 25px;
             transition: all 0.3s ease-in;
+            font-size: 16px;
+           
             } 
-            .contact a:hover {
+            .contact:hover {
             background-color: $light-color;
             padding: 0.7rem 2rem;
             color: #333;
@@ -97,17 +100,34 @@
     .nav-container-logo{
 
         .nav-container-logo-img {
-            width:32px;
+            width:35px;
         }
         
         .nav-container-logo-name {
-            font-size: 11px;
+            font-size: 13px;
             margin-left: 10px;       
         }
 
     }
     .nav-container-bar{
-        font-size: 12px;        
+        font-size: 12px; 
+       
+
+        .contact{
+            font-size: 14px; 
+            background-color: $light-blue-color;
+            padding: 0.7rem 1rem;
+            color: $dark-blue-color;
+            transition: all 0.3s ease-in;
+            margin-left: 0;
+            
+        }
+
+        .contact:hover {
+            background-color: $light-color;
+            padding: 0.7rem 1rem;
+          
+            }
     }
 
   
@@ -117,7 +137,10 @@
 }
 
 
-@media(max-width: 885px){
+@media(max-width: 900px){
+    body{
+        font-size: 14px;
+    }
 .nav {
 
 .nav-container{
@@ -134,11 +157,17 @@
             margin-left: 10px;       
         }
     }
-    i{
+    .burger{
         display: block;
-        font-size: 25px;
-        margin-top: 4px;
-        margin-right: 15px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .burger div{
+        width:22px;
+        height: 3px;
+        margin:5px;
+        background-color: #fff;
+        border-radius: 2px;
     }
     
     //nav-bars
@@ -156,39 +185,59 @@
         overflow-x:hidden;
         display: flex;
         flex-direction: column;
-        margin-right: -250px;
-       
+        transform: translateX(100%);
         
+
         .btn-close{
             cursor: pointer;
             display: flex;
             justify-content: flex-end;
             font-size: 35px;
-            width: 100%;
-            padding-top: 10px;
-            padding-right: 20px;
+            margin-top: 0px;
+            margin-right: 20px;
         }
         
         ul{
-            margin-top: -50px;
+         
             display: flex;
             flex-direction: column;
-           
+            margin-right: 0px;
+            margin: -20px 10px 0 10px;
             }
 
-        li{
-            padding: 15px;
+            li {    
+                padding: 0.7rem 2rem;
+                text-decoration: none;
+                color: $light-color;
+                transition: all 0.2s ease-in;
+                }
+            li:hover {
+            background-color: $lightdark-blue-color;
+            color: #fff;
             }
        
-        .contact a {
-            margin-left: 0;
+        .contact {
+            
             background-color: $light-blue-color;
-            color: #333;
+            padding: 0.5rem 1rem;
+            color: $dark-blue-color;
+            width: 120px;
+            transition: all 0.3s ease-in;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 16px;
             margin-left: 30px;
             } 
-              
-    }
 
+        .contact:hover {
+            background-color: $light-color;
+            padding: 0.5rem 1rem;
+            color: #333;
+            }    
+    }
+    
+    
 }
 
 

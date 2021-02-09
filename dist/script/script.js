@@ -2,28 +2,26 @@ const scroll = new SmoothScroll('nav a[href*="#"]', {
 	speed: 500
 });
 
-let btn = document.querySelector('i');
+let btn = document.querySelector('.burger');
 let sideMenu = document.querySelector(".nav-container-bar")
 let btnclose = document.querySelector(".btn-close")
 
-
-
-
 btn.addEventListener("click", ()=>{
-	console.log("hello")
-	sideMenu.style.marginRight = "0px";
-	
+	// sideMenu.classList.toggle('nav-active');
+	console.log('print')
+	sideMenu.style.transform = "translateX(0%)";
 });
+
+
 
 btnclose.addEventListener("click", ()=>{
-
-	sideMenu.style.marginRight = "-250px";
-
+	sideMenu.style.transform = "translateX(100%)";
+	
 });
 
 
-sideMenu.addEventListener('click', ()=>{
+// sideMenu.addEventListener('click', ()=>{
 	
-	sideMenu.style.marginRight = "-250px";
+// 	// sideMenu.style.marginRight = "-250px";
 	
-})
+// })
