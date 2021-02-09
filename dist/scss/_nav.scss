@@ -45,7 +45,7 @@
         .nav-container-bar {
             font-size: 16px;    
             grid-column: 2/4;
-          
+            
            
             ul  {
             padding-top: 20px;
@@ -189,20 +189,37 @@
         
 
         .btn-close{
+            margin-top: 10px;
+            margin-left: 210px;
+            display: block;
             cursor: pointer;
-            display: flex;
-            justify-content: flex-end;
-            font-size: 35px;
-            margin-top: 0px;
-            margin-right: 20px;
+       
+        }
+        .btn-close div{
+            width:19px;
+            height: 3px;
+            margin:5px;
+            background-color: rgb(202, 199, 199);
+            border-radius: 2px;
+        }
+
+        .lineOne{
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .lineTwo{
+            opacity: 0;
+        }
+        .lineThree{
+            transform: rotate(45deg) translate(-5px, -6px);
         }
         
+
         ul{
-         
+            
             display: flex;
             flex-direction: column;
             margin-right: 0px;
-            margin: -20px 10px 0 10px;
+            margin: -10px 10px 0 10px;
             }
 
             li {    
@@ -215,6 +232,7 @@
             background-color: $lightdark-blue-color;
             color: #fff;
             }
+            
        
         .contact {
             
@@ -234,7 +252,14 @@
             background-color: $light-color;
             padding: 0.5rem 1rem;
             color: #333;
-            }    
+            } 
+            
+            
+           
+    }
+
+    .nav-container-bar .nav-active{
+        transform: translateX(100%);
     }
     
     

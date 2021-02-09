@@ -9,6 +9,7 @@
       margin: auto;
     }
    
+   
     //this .section-container is customize style from global style scss
    .section-container {
     gap: 40px;
@@ -18,15 +19,27 @@
     @include set-background($light-color);
 
     h1{
-       margin-bottom: -10px;
+       margin-bottom: -5px;
     }
+
+ 
+
    }
 }
 
    //this @media is customize style from global style scss
 @media (max-width: 700px) {
-  .section-d .section-container {
+  .section-d {
+   padding: 60px 20px 20px 20px;
+
+
+   .section-container {
       gap: 0px;
+     
+    
    }
+  }
+  
+  
   
   }

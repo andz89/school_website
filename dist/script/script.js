@@ -5,10 +5,11 @@ const scroll = new SmoothScroll('nav a[href*="#"]', {
 let btn = document.querySelector('.burger');
 let sideMenu = document.querySelector(".nav-container-bar")
 let btnclose = document.querySelector(".btn-close")
+let li = document.querySelectorAll('li')
 
 btn.addEventListener("click", ()=>{
 	// sideMenu.classList.toggle('nav-active');
-	console.log('print')
+	
 	sideMenu.style.transform = "translateX(0%)";
 });
 
@@ -19,9 +20,15 @@ btnclose.addEventListener("click", ()=>{
 	
 });
 
+// sideMenu.addEventListener("click", ()=>{
+// 	li.forEach((list)=>{
 
-// sideMenu.addEventListener('click', ()=>{
+// 	})
 	
-// 	// sideMenu.style.marginRight = "-250px";
-	
-// })
+// });
+
+
+
+
+
+
