@@ -11,11 +11,15 @@
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 900px){
 
   .about {
      
       margin-top: 0px;
+
+      .section-container{
+        gap: 10px;
+        }
   }
 
 }
