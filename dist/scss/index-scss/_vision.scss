@@ -1,5 +1,5 @@
 
-.section-b {
+.vision {
     @include set-background($lightdark-blue-color);
     text-align: center;
     padding: 100px 0;
@@ -16,12 +16,12 @@
 
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
-  .section-b  {
+  .vision {
   padding: 20px 0;
   }
-  .section-b .section-container{
+  .vision .section-container{
     gap: 50px;
  }
  

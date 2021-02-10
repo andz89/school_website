@@ -1,5 +1,5 @@
 
-.section-c {
+.logos {
     @include set-background($light-color);
   
   //this .section-container is customize style from global style scss
@@ -22,15 +22,15 @@
 
 @media (max-width: 500px) {
 
-  .section-c .section-container {
+  .logos .section-container {
   grid-template-columns: 1fr;
   justify-content: space-around;
   padding: 30px 0 10px 0;
   }
-  .section-c .logo-display{
+  .logos .logo-display{
     width: 25%;
   }
-  .section-c p{
+  .logos p{
     padding: 10px 30px 20px 30px;
   }
  
