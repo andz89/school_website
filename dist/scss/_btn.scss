@@ -16,7 +16,7 @@
     
 }
   //btn size
-  .btn-sm {
+.btn-sm {
         padding: 0.2rem 1rem;
 }
 .btn-md {
@@ -31,6 +31,5 @@
     &:hover{
         background: lighten($dark-blue-color, 5%)
     }
-
-  
+ 
 }

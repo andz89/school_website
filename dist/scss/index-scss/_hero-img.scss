@@ -1,8 +1,21 @@
 
-.hero-img {
-    margin-top: 50px;
-    position: relative;
-    background: url('https://source.unsplash.com/GDokEYnOfnE') no-repeat center center/cover;
-    height: 20rem;
- 
+
+// .banner{
+//     margin-top: 50px;
+//     width: 100%;
+//     display: block;
+// }
+// .banner-img{
+//     width: 100%;
+//     display: block;
+// }
+
+
+.banner{
+  margin-top: 50px;
+  background: url("https://source.unsplash.com/DHk_mju83z0");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
 }

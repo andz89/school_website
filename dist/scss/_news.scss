@@ -29,6 +29,19 @@
  
 
    }
+
+   .hide-news-paragraph{
+      display: none;
+   }
+
+   .show-news{
+      display: block;
+   }
+
+.btn-hide{
+   display: none;
+}
+   
 }
 
    //this @media is customize style from global style scss
