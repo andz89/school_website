@@ -3,8 +3,11 @@
 
 .learningMaterials{
     @include set-background($light-color);
-    margin-top: 0px;
-    padding: 120px 0 ;
+
+    margin-top: 110px;
+    margin-bottom: 120px;
+    padding-bottom: 20px;
+    // padding: 120px 0 ;
     
     
     .section-container {
@@ -63,15 +66,16 @@
 }
 @media (max-width: 900px) {
     .learningMaterials {
-        margin-top: 20px;
-        padding: 60px 0;
+        margin-top: 80px;
     }
      
     }
 
     @media (max-width: 680px) {
         .learningMaterials {
-            padding: 40px 0 50px 0;
+            margin-top: 70px;
+            margin-bottom: 120px;
+            padding-bottom: 20px;
 
             .section-container{
     
@@ -93,7 +97,7 @@
 
         @media (max-width: 500px) {
             .learningMaterials {
-                padding: 40px 0 10px 0;
+             
         
                 .section-container{
         

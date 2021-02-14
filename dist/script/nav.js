@@ -7,59 +7,52 @@ let sideMenu = document.querySelector(".nav-container-bar")
 let btnclose = document.querySelector(".btn-close")
 
 btn.addEventListener("click", ()=>{
-	sideMenu.style.transform = "translateX(0%)";
+	sideMenu.classList.toggle('nav-active-open');
+    
 });
 
 btnclose.addEventListener("click", ()=>{
-	sideMenu.style.transform = "translateX(100%)";
-	
+	sideMenu.classList.toggle('nav-active-open');
 });
 
 
 //navigation page
-
+let nav = document.querySelector('nav')
 let newsPage = document.querySelector(".news-page")
 let homePage = document.querySelector(".home-page")
 let contactPage = document.querySelector(".contact-page")
 let learningPage = document.querySelector(".learning-page")
-let nav = document.querySelector('nav')
 
 nav.addEventListener('click', (e)=>{
 
 pageDisplay(e.target)
+hidenavigation(e.target)
 
 })
 
+
+//hide nav when click in menu
+function hidenavigation(e){
+
+    if(e.classList.contains("hide-nav")){
+        console.log('active')
+        sideMenu.classList.toggle('nav-active-open');
+    }
+}
+
+//page display when click to menu
 function pageDisplay(e){
 
     let allPageDisplay = document.querySelectorAll(".page-display")
 
-	if(e.classList.contains("news-page-nav")){
+	if(e.classList.contains("page")){
        
         allPageDisplay.forEach((page)=>{
-            page.style.display = 'none'
-            newsPage.style.display="block"
-        })
-	}
-
-    if(e.classList.contains("home-page-nav")){
-        allPageDisplay.forEach((page)=>{
-            page.style.display = 'none'
-            homePage.style.display="block"
-        })
-	}
-
-    if(e.classList.contains("contact-page-nav")){
-        allPageDisplay.forEach((page)=>{
-            page.style.display = 'none'
-            contactPage.style.display="block"
-        })
-	}
-
-    if(e.classList.contains("learning-page-nav")){
-        allPageDisplay.forEach((page)=>{
-            page.style.display = 'none'
-            learningPage.style.display="block"
+            page.classList.remove("active-display")
+            if(e.classList.contains("home-page-nav")){homePage.classList.add("active-display")}
+            if(e.classList.contains('news-page-nav')){newsPage.classList.add("active-display")}
+            if(e.classList.contains("contact-page-nav")){contactPage.classList.add("active-display")}
+            if(e.classList.contains("learning-page-nav")){learningPage.classList.add("active-display")}
         })
 	}
 }
