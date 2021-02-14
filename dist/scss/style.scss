@@ -13,6 +13,19 @@
 @import 'btn';
 
 
+//page display
+ .page-display{
+   display: none;
+ }
+
+ .page-display.active-display{
+  display: block;
+ }
+
+ .display-none{
+   display: none;
+ }
+
 // Global style scss
 * {
     box-sizing: border-box;
