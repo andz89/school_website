@@ -5,3 +5,15 @@ footer{
     font-size: 11px;
    
 }
+
+
+@media (max-width: 500px) {
+    footer{
+        @include set-background($dark-blue-color);
+        text-align: center;
+        padding: 20px 20px;
+        font-size: 9px;
+       
+    }
+     
+    }
