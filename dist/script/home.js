@@ -1,17 +1,8 @@
 
-//for smooth scroll
-// const scroll = new SmoothScroll('nav a[href*="#"]', {
-// 	speed: 500
-// });
+
 setTimeout(function () {
     location.reload();
 }, 900000);
-
-
-
-
-
-
 
 
 //about bvmces- to show hidden paragraph
