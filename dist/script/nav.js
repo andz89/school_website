@@ -44,9 +44,17 @@ function hidenavigation(e){
 function pageDisplay(e){
 
     let allPageDisplay = document.querySelectorAll(".page-display")
-
+  
 	if(e.classList.contains("page")){
-       
+
+        //the li will have background when active
+        let pages = document.querySelectorAll(".active-menu")
+        pages.forEach((page)=>{
+            page.parentElement.classList.remove("active")
+            if(e.classList.contains("active-menu")){e.parentElement.classList.add("active")}
+        })
+
+      
         allPageDisplay.forEach((page)=>{
             page.classList.remove("active-display")
             if(e.classList.contains("home-page-nav")){homePage.classList.add("active-display")}
@@ -55,6 +63,7 @@ function pageDisplay(e){
             if(e.classList.contains("learning-page-nav")){learningPage.classList.add("active-display")}
         })
 	}
+  
 }
 
 

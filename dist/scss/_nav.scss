@@ -68,6 +68,7 @@
             background-color: $lightdark-blue-color;
             color: #fff;
             }
+           
 
         // contact us box
             .contact{
@@ -88,6 +89,10 @@
         
         }
     }
+}
+.active{
+    background-color: $lightdark-blue-color;
+    color: #fff;
 }
 
 
@@ -236,15 +241,14 @@
                 color: $light-color;
                 transition: all 0.2s ease-in;
             
-              
-          
                 }
             li:hover {
             background-color: $lightdark-blue-color;
             color: #fff;
-           
-            }
 
+            }
+           
+         
            
             
        
