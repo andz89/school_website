@@ -1,17 +1,23 @@
 
 .vision {
     @include set-background($lightdark-blue-color);
-    text-align: center;
     padding: 100px 0;
 
     
       //this .section-container is customize style from global style scss
-    .section-container {
-    gap: 100px;
- 
+    .section-container { 
+    gap:120px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: none;
     div{
-      width: 90%;
-      margin: auto;
+      width: 100%;
+      text-align: center;
+      // margin: auto;
+      padding: 0 25px;
+    }
+   
+    .core-values{
+      font-size: 22px;
     }
 
     }
