@@ -13,24 +13,14 @@
     gap: 50px;
 
     }
+    .header-about{
+      margin-bottom: 5px;
+    }
+    .date-about{
+      margin-top: 10px;
+      font-weight: 600;
+     }
 
-    .about-active{
-      transition:0.9s;
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-content: center;
-      animation: smooth;
-      animation-duration: 0.7000s; 
-  
-    }
- 
-    .hide-about-paragraph{
-      display: none;
-    }
-
-    .show{
-      display: block;
-    }
 
     .hide{
       display: none;

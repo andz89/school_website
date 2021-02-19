@@ -52,11 +52,7 @@
        .form {
     
     //input type: first-name & lastname to display Grid
-        .form-group:first-child{  
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
+      
     
         .form-group {
             margin: 1.2rem 0;
