@@ -1,4 +1,6 @@
-
+setTimeout(function () {
+        location.reload();
+    }, 900000);
           
 //btn news - to show hidden paragraph
         let newsDiv = document.querySelector('.news')
