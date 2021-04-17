@@ -1,5 +1,11 @@
 
 
+.container{
+  max-width: 1150px;
+  width: 100%;
+  margin: 40px auto;
+}
+
 // .banner{
 //     margin-top: 50px;
 //     width: 100%;
@@ -11,11 +17,11 @@
 // }
 
 
-.banner{
-  margin-top: 50px;
-  background: url("https://source.unsplash.com/DHk_mju83z0");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 550px;
-}
+// .banner{
+//   margin-top: 50px;
+//   background: url("https://source.unsplash.com/DHk_mju83z0");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 550px;
+// }

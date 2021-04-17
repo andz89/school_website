@@ -21,20 +21,6 @@ main{
   height: 100%;
 }
 
-//page display
- .page-display{
-   display: none;
- }
-
- .active-display{
-  display: block;
-  animation: smooth;
-  animation-duration: 0.7000s; 
- }
-
- .display-none{
-   display: none;
- }
 
 // Global style scss
 * {
@@ -68,6 +54,14 @@ main{
     justify-content: center;
     padding: 20px 20px;
     }
+
+
+    .home-nav,
+    .learning-nav,
+    .news-nav{
+      background-color: $lightdark-blue-color;
+      color: #fff;
+  }
   
 
 @media (max-width: 700px) {
